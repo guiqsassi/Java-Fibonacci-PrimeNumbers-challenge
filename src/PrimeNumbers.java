@@ -3,15 +3,12 @@ import java.util.List;
 
 public class PrimeNumbers {
 
+    //-- Criar uma função em sua linguagem preferida. A função deve receber um numero N > 1 (validar o input),
+    //e retornar todos os números primos até o número N. EX. p(2) = [2]; p(3) = [2, 3]; p(10) = [2, 3, 5, 7];
 
-    public static void main(String[] args) {
 
-        List<Integer> primes = linearGetPrimeNumbers( 100);
-        primes.forEach(System.out::println);
 
-    }
-
-    // Função recursiva
+    // --- Criar uma função recursiva que resolva p
     public static List<Integer> recursiveGetPrimeNumbers(int n){
         List<Integer> primes = new ArrayList<>();
        return findPrimeNumbers(n, primes);
@@ -35,7 +32,7 @@ public class PrimeNumbers {
 
     }
 
-    // Função linear
+    //--- Criar uma função linear que resolva p
     public static List<Integer> linearGetPrimeNumbers(int n){
         List<Integer> primes = new ArrayList<>();
         if(n < 2){
